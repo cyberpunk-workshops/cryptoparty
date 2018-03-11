@@ -1,5 +1,7 @@
 # Cryptoparty
 
+Am Anfang fragen, ob jmd einen Use Case für PGP hat. Wenn nicht, weglassen.
+
 ## Es gibt keine Privatsphäre mehr, es gibt nur noch digitale Selbstverteidigung
 
 Privatsphäre im politischen Struggle
@@ -106,15 +108,24 @@ Privnote.com
 * Die Nachricht wird, nachdem sie entschlüsselt wird, sofort gelöscht
 * Gut, um mit Leuten zu kommunizieren, die zu faul für Crypto sind
 * Leider etwas aufwändig für Massenmails etc.
+* Privnote ist unsicher - in den USA wurde es bereits als Beweis in Prozessen verwendet
+  * Wenn man also von denen getargeted wird, lieber nicht Privnote verwenden
 
 # Dinge einrichten:
 
 Nun der praktische Teil, das tatsächliche installieren und benutzen von Verschlüsselung.
 
 * PGP-Email
-  * Thunderbird
-  * Enigmail
+  * Thunderbird: https://www.mozilla.org/en-US/thunderbird/
+  * Enigmail: In Thunderbird im Appstore
   * evtl GPG4Win (wird von Enigmail automatisch mitinstalliert)
-* Android: Wire, Signal, Deltachat
+* Android:
+  * Wire: Entweder im GooglePlay Store. Wenn man ein Google-freies Handy hat, gibts die apk auf https://wire.com/en/download/
+  * Signal: Entweder im GooglePlay Store. Wenn man ein Google-freies Handy hat, gibts die apk auf https://signal.org/android/apk/
+  * Deltachat: Auf F-Droid: https://f-droid.org/en/packages/com.b44t.messenger/
+  * Briar: Entweder im GooglePlay Store oder auf F-Droid: https://briarproject.org/fdroid.html
+* iOS:
+  * Wire: kostenlos im App Store
+  * Signal: kostenlos im App Store
 
 Zum Abschluss: Key-Signing-Party, trust all the fingerprints
