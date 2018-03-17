@@ -101,7 +101,7 @@ Autocrypt
 * Größte Userbase der Welt: fast jede\*r benutzt Email
 * Contra: Noch kaum Clients, bisher nur Deltachat als mobile client
 
-# Andere Lösungen:
+## Andere Lösungen:
 
 Privnote.com
 * Man schreibt die Nachricht in die Privnote und verschickt den Link an jmd.
@@ -110,6 +110,36 @@ Privnote.com
 * Leider etwas aufwändig für Massenmails etc.
 * Privnote ist unsicher - in den USA wurde es bereits als Beweis in Prozessen verwendet
   * Wenn man also von denen getargeted wird, lieber nicht Privnote verwenden
+
+# Festplattenverschlüsselung
+
+Veracrypt
+* Für Linux, Windows & MacOS
+* Man kann entweder ne Festplatte verschlüsseln, zB ne externe oder 1 USB-Stick
+* Oder man kann einen Container erstellen, der ne feste Größe (zB 10 GB) hat
+* Um das zu accessen, muss man Veracrypt starten, und das Passwort angeben, dass man beim erstellen ausgewählt hat.
+
+LUKS
+* Für Linux, meistens beim installieren des Betriebssystems
+* Passwort wird beim Hochfahren eingegeben - wenn man das Stromkabel rausreißt, ist alles verschlüsselt
+* Hilft vor allem, wenn Rechner beschlagnahmt werden
+
+Cryptomator
+* Für Linux, Windows & MacOS
+* Kleiner Container mit dynamischer Größe, wird mit einem Passwort verschlüsselt
+* Um das zu accessen, muss man Cryptomator starten, und das Passwort angeben, dass man beim erstellen ausgewählt hat.
+
+# Tails
+
+Linux-Distribution, die für alles Tor benutzt, und gut für Anonymität ist.
+Die Daten auf dem USB-Stick sind mit LUKS verschlüsselt.
+
+Man kann sie auf einem USB-Stick installieren, und mit sich führen.
+Man kann den Stick bei einem beliebigen PC anschließen, und die Hardware des PCs für Tails nutzen.
+* USB-Stick an den PC anstecken
+* PC rebooten, aber im Bootmenü den Tails-Stick auswählen
+* Entschlüsseln & Einloggen
+* Tails benutzen!
 
 # Dinge einrichten:
 
