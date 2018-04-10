@@ -76,6 +76,7 @@ Whatsapp
 Signal
 * ist end2end-encrypted und open Source
 * Wird von einer spendenfinanzierten NGO entwickelt
+* Boost: 100% OpenSource-Ableger, kompatibel mit Signal, gibts auf F-Droid, braucht keine Google-Services
 * Contra: Kann auf dem Desktop nur verwendet werden, wenn ein Smartphone gleichzeitig connected ist
 * Contra: Entwickler stellen sich gegen Dezentralität
 
@@ -83,7 +84,8 @@ Telegram
 * ist (schlecht) end2end-encrypted und open Source
 * Der Entwickler hat sich öfters gegen Bestechungsversuche etc. vom FBI gewehrt
 * Contra: Desktop-Client kann nicht E2E verschlüsseln
-* Contra: der Algorithmus ist echt scheiße, sagen Kryptographen
+* Contra: der Algorithmus ist echt scheiße, kommt nicht aus der kryptographischen Community;
+  * evtl ist das nicht mal end2end [citation needed]
 
 XMPP/Jabber
 * ist wie Email ein Protokoll, kein Service -> dh, sehr dezentral
@@ -91,6 +93,7 @@ XMPP/Jabber
   * Empfohlene Clients: Gajim für Desktop, Conversations für Android
 * OTR: ist ein etwas älterer Standard, bei dem Nachrichten, die während einer Sitzung geschrieben werden,
   später nicht mehr lesbar sind
+  * Mittlerweile eig überall deprecated
 * Omemo: ist dasselbe Protokoll wie bei Wire, Whatsapp, und Signal
 * Contra: Jabbers Gruppenkonversationen sind nicht so intuitiv
 
@@ -100,6 +103,12 @@ Autocrypt
 * Der PGP-Public-Key wird im Header mitgeschickt, statt auf nem Keyserver zu liegen
 * Größte Userbase der Welt: fast jede\*r benutzt Email
 * Contra: Noch kaum Clients, bisher nur Deltachat als mobile client
+
+Briar
+* Noch in der Beta
+* Sammelt keine Metadaten, weil Distributed; es gibt keinen Server
+* Nur für Android
+* Contra: Hoher Batterieverbrauch
 
 ## Andere Lösungen:
 
@@ -149,13 +158,21 @@ Nun der praktische Teil, das tatsächliche installieren und benutzen von Verschl
   * Thunderbird: https://www.mozilla.org/en-US/thunderbird/
   * Enigmail: In Thunderbird im Appstore
   * evtl GPG4Win (wird von Enigmail automatisch mitinstalliert)
-* Android:
+* Android
   * Wire: Entweder im GooglePlay Store. Wenn man ein Google-freies Handy hat, gibts die apk auf https://wire.com/en/download/
   * Signal: Entweder im GooglePlay Store. Wenn man ein Google-freies Handy hat, gibts die apk auf https://signal.org/android/apk/
   * Deltachat: Auf F-Droid: https://f-droid.org/en/packages/com.b44t.messenger/
   * Briar: Entweder im GooglePlay Store oder auf F-Droid: https://briarproject.org/fdroid.html
-* iOS:
+* iOS
   * Wire: kostenlos im App Store
   * Signal: kostenlos im App Store
+* Tails
+  * Verifizierte .iso bereithalten
+  * Developer-Fingerprint signen
+* Veracrypt
+  * Verifizierte Setups bereithalten
 
 Zum Abschluss: Key-Signing-Party, trust all the fingerprints
+
+Kurze Session: Wie verifiziere ich Checksums?
+
