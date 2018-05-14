@@ -105,7 +105,9 @@ Autocrypt
 * Contra: Noch kaum Clients, bisher nur Deltachat als mobile client
 
 Briar
-* Noch in der Beta
+* Scheint ganz gut end-to-end-encrypted zu sein
+* Man kann Kontakte nur Face2face hinzufügen (QR-code scannen) - kann sich sicher sein, mit wem man schreibt
+* Man kann sich später auch von gemeinsamen bekannten "vorstellen lassen", ohne dass man sich face2face trifft
 * Sammelt keine Metadaten, weil Distributed; es gibt keinen Server
 * Nur für Android
 * Contra: Hoher Batterieverbrauch
@@ -119,6 +121,27 @@ Privnote.com
 * Leider etwas aufwändig für Massenmails etc.
 * Privnote ist unsicher - in den USA wurde es bereits als Beweis in Prozessen verwendet
   * Wenn man also von denen getargeted wird, lieber nicht Privnote verwenden
+
+# Verschlüsselung von Web-Traffic
+
+Wenn man surft, hinterlässt man auch Spuren - alles, was man 
+* in ein Kommentarfeld 
+* oder Passwortfeld schreibt, 
+* jede Datei, die man auf eine ownCloud hochlädt...
+
+all das ist erstmal unverschlüsselt. Es sei denn, es wird über HTTPS versendet.
+Das seht ihr in der URL-Zeile, da steht am Anfang entweder
+```http://example.com``` oder ```https://example.com```. Nur letzteres ist
+verschlüsselt, und zwar zwischen eurem Rechner und dem Server. Wenn euer ISP
+wissen will, was ihr da schreibt, guckt er in die Röhre.
+
+Leider hat HTTPS 2 Schwächen:
+* es bieten noch nicht alle Seiten an
+* man landet bei manchen Seiten nicht automatisch auf der sicheren Seite.
+
+Um letzteres zu verhindern, gibt es das praktische Browser-Plugin "HTTPS
+Everywhere". Es leitet euch automatisch auf eine sichere Version der Website
+um, wenn es eine gibt. 
 
 # Festplattenverschlüsselung
 
