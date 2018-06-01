@@ -194,6 +194,11 @@ Nun der praktische Teil, das tatsächliche installieren und benutzen von Verschl
   * Developer-Fingerprint signen
 * Veracrypt
   * Verifizierte Setups bereithalten
+* Jabber
+  * Android: **Conversations** https://conversations.im/
+  * Windows/Linux: **Gajim** https://gajim.org/downloads.php?lang=en
+  * Make sure to enable OMEMO to encrypt it!
+  * You have to create a jabber account to use it. Just search online how to do it.
 
 Zum Abschluss: Key-Signing-Party, trust all the fingerprints
 
