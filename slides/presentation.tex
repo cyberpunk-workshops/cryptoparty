@@ -1,0 +1,255 @@
+\documentclass{beamer}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{xcolor}
+\usepackage{comicneue}
+\usepackage{graphbox}
+
+\graphicspath{{img/}}
+
+\title{\bf\fontsize{51.59pt}{51.59pt}\selectfont\includegraphics[align=c,height=1.2em]{cyber.png}party}
+\author{vmann \& sid}
+\date{}
+
+\begin{document}
+\begin{frame}
+    \titlepage
+\end{frame}
+
+\begin{frame}{Verschlüsselung - Was?}
+	Verschlüsselung 101: 
+	\begin{itemize}
+		\item für alle lesbaren Text so umwandeln, dass er nicht mehr lesbar ist, wenn man keine Berechtigung dazu hat
+	\end{itemize}		
+\end{frame}
+
+\begin{frame}{Verschlüsselung - Warum?}
+    \begin{center}
+        \includegraphics[height=0.6\textheight]{thecloud.png}
+    \end{center}
+	\begin{itemize}
+		\item Allgemein: mensch möchte nicht, dass alle wissen was es tut
+		\item Hier konkret: Repression umgehen, andere Menschen schützen
+	\end{itemize}
+\end{frame}
+
+\begin{frame}{Verschlüsselung - Warum?}
+	Beispiel 1: Hausdurchsuchung\\
+	Bei euch gibt es eine Hausdurchsuchung. Durch Verschlüsselung eurer Festplatten verhindert ihr, dass ihr Repression durch die Informationen, die auf eurer Festplatte sind, erhaltet.
+	\\\hspace{1cm}
+	
+	Beispiel 2: Abhören\\
+	Ihr plant eine Aktion. Durch Kommunikation durch verschlüsselte Wege macht ihr es schwerer abgehört zu werden und eure Aktion bleibt so nur unter euch.
+	\\\hspace{1cm}
+	
+	\textbf{Schützt eure Mitmenschen durch Verschlüsselung!}	
+\end{frame}
+
+\begin{frame} {Verschlüsselung - Wie?}
+	\begin{itemize}
+		\item Offen: Alle können nachprüfen, wie die Verschlüsselung funktioniert und die Sicherheit liegt nur im Schlüssel.
+                \item Aktuelle \& geprüfte Kryptographie: Die Verschlüsselungs-Methode ist bereits länger in Crypto-Kreisen bekannt und es wurden keine Schwächen gefunden.
+	\end{itemize}
+	
+        \pause
+	Sinnvoll zu haben:
+	\begin{itemize}
+            \item Ende-zu-Ende (E2E): Die Verschlüsselung reicht vom Sender bis zum Empfänger.
+            \item Glaubhafte Abstreitbarkeit (Deniability): Mensch kann glaubhaft abstreiten eine Nachricht gesendet zu haben.
+	    \item Perfect forward secrecy: Auch wenn in Zukunft ein Schlüssel kompromitiert wird ist alte Kommunikation nicht entschlüsselbar.
+	\end{itemize}
+\end{frame}
+
+\begin{frame}{Verschlüsselung - Womit? (Messenger)}
+    \begin{tabular}{c|ccccccccc}
+        & \includegraphics[height=1.5em]{whatsapp.png}
+        & \includegraphics[height=1.5em]{facebook.jpg}
+        & \includegraphics[height=1.5em]{threema.png}
+        & \includegraphics[height=1.5em]{telegram.png}
+        & \includegraphics[height=1.5em]{signal.png}
+        & \includegraphics[height=1.5em]{wire.png}
+        & \includegraphics[height=1.5em]{conversations.png}
+        & \includegraphics[height=1.5em]{briar.png}
+        & \includegraphics[height=1.5em]{deltachat.png}
+        \\
+        {\small Offen} & \textcolor{red}{\bf\Huge-} & \textcolor{red}{\bf\Huge-} & \textcolor{red}{\bf\Huge-} & \textcolor{green}{\bf\Huge+} & \textcolor{green}{\bf\Huge+} & \textcolor{green}{\bf\Huge+} & \textcolor{green}{\bf\Huge+} & \textcolor{green}{\bf\Huge+} & \textcolor{green}{\bf\Huge+} \\
+        {\small Crypto} & \textcolor{green}{\bf\Huge+} & \textcolor{red}{\bf\Huge-} & \textcolor{green}{\bf\Huge+} & \textcolor{orange}{\bf\Huge\textasciitilde} & \textcolor{green}{\bf\Huge+} & \textcolor{green}{\bf\Huge+} & \textcolor{green}{\bf\Huge+} & \textcolor{green}{\bf\Huge+} & \textcolor{green}{\bf\Huge+} \\
+        {\tiny Infrastruktur} & \textcolor{red}{\bf\Huge-} & \textcolor{red}{\bf\Huge-} & \textcolor{red}{\bf\Huge-} & \textcolor{red}{\bf\Huge-} & \textcolor{red}{\bf\Huge-} & \textcolor{red}{\bf\Huge-} & \textcolor{green}{\bf\Huge+} & \textcolor{green}{\bf\Huge+} & \textcolor{green}{\bf\Huge+} \\
+        {\small Desktop} & \textcolor{orange}{\bf\Huge\textasciitilde} & \textcolor{green}{\bf\Huge+} & \textcolor{red}{\bf\Huge-} & \textcolor{green}{\bf\Huge+} & \textcolor{orange}{\bf\Huge\textasciitilde} & \textcolor{green}{\bf\Huge+} & \textcolor{green}{\bf\Huge+} & \textcolor{red}{\bf\Huge-} & \textcolor{green}{\bf\Huge+} \\
+        {\small "Features"} & \textcolor{green}{\bf\Huge+} & \textcolor{green}{\bf\Huge+} & \textcolor{green}{\bf\Huge+} & \textcolor{green}{\bf\Huge+} & \textcolor{orange}{\bf\Huge\textasciitilde} & \textcolor{green}{\bf\Huge+} & \textcolor{orange}{\bf\Huge\textasciitilde} & \textcolor{red}{\bf\Huge-} & \textcolor{orange}{\bf\Huge\textasciitilde} \\
+    \end{tabular}
+\end{frame}
+
+\begin{frame}{Verschlüsselung - Womit? (Messenger)}
+    \begin{itemize}
+        \item Signal - \url{https://www.signal.org}
+        \item Wire - \url{https://app.wire.com}
+        \item Conversiations (Jabber, Android) - \url{https://conversations.im}
+        \item Gajim (Jabber, Desktop) - \url{https://gajim.org}
+        \item Briar - \url{https://briarproject.org}
+        \item Deltachat (E-Mail, Android) - \url{https://delta.chat}
+    \end{itemize}
+\end{frame}
+
+\begin{frame}{Verschlüsselung - Womit? (E-Mail)}
+	Wer benutzt denn noch E-Mails? \\\pause
+	\hspace{1cm}
+	
+	Allgemeines zu E-Mails:
+	\begin{itemize}
+		\item benutzt Alternativen zu "kostenlosen" E-Mail-Anbietern
+		\item gute Beispiele: \url{riseup.net}, \url{systemli.org}, ...
+		\item schlechte Beispiele: \url{gmail.com}, \url{hotmail.com}, ...
+	\end{itemize}
+	\hspace{1cm}\pause
+	
+	E-Mail-Verschlüsselung mit PGP kurzgesagt:\\
+	\includegraphics[width=10cm]{phil.png}
+\end{frame}
+
+\begin{frame}{Verschlüsselung - Womit? (E-Mail)}
+	Autocrypt (\url{https://autocrypt.org/}) ist ein Standard, der Menschen PGP einfacher macht, indem es die Programme "automatisch" verschlüsseln  lässt.\\
+	\hspace{1cm}
+	
+	Welche E-Mail-Programme unterstützen das gerade?
+	\begin{itemize}
+	\item Deltachat (App)
+	\item K9-Mail (App)
+	\item Enigmail (Thunderbird Plugin)
+	\end{itemize}
+	\hspace{1cm}
+	
+	Und wie benutze ich das nun?
+	\begin{itemize}
+		\item Lade das Programm herunter und richte dein E-Mail-Konto darin ein. Fertig. Jetzt werden alle E-Mails von und zu Menschen die auch Autocrypt verwenden mit PGP verschlüsselt.
+	\end{itemize}
+\end{frame}
+
+\begin{frame}{Verschlüsselung - Womit? (Daten)}
+	Problem: Je nach Gerät anders :(
+    \begin{itemize}
+    	\item Aber: Prinzip ist gleich
+    	\item Mensch nutzt ein Programm, dass das Gerät verschlüsselt
+    	\item Nur welches Programm?
+    \end{itemize}
+\end{frame}
+
+\begin{frame}{Verschlüsselung - Womit? (Daten)}
+\begin{tabular}{ l | l }
+	System & Programm \\\hline
+	Windows/Linux & Veracrypt* \\
+	Linux & LUKS \\
+	Android & Device Encryption \\
+	iOS & Device Encryption  \\
+\end{tabular}
+
+\hspace{2cm}
+
+*\small{\url{https://www.veracrypt.fr}}
+	
+\end{frame}
+
+\begin{frame} {Sicherheit - Softwareupdates}
+	Euer System wird euch (hoffentlich) sagen, wenn es Updates gibt. Und wenn es sie gibt, installiert sie.
+	\\\hspace{1cm}
+	
+	FAQ:
+	\begin{itemize}
+		\item Muss ich wirklich alle installieren? \pause
+		\\ Ja. \pause
+		\item Wie häufig ist es, dass das System nicht mehr funktioniert nach einem Softwareupdate? \pause
+		\\ Das ist nicht vorhersagbar, aber selten. \pause
+		\item Soll ich es trotzdem installieren? \pause
+		\\ Ja. \pause
+		\item Wieso? \pause
+		\\ Wenn dein System kompromitiert ist bringt dir sämtliche Verschlüsselung nichts?
+	\end{itemize}
+\end{frame}
+
+\begin{frame}{Sicherheit - Passwörter}
+	\begin{itemize}
+		\item Benutzt nie, nie, nie 2x dasselbe Passwort
+                \item Benutzt einen Passwortmanager (KeePass, \dots)
+                \item Wählt Passwörter zufällig (d.h. verwendet ein Programm)
+	\end{itemize}
+\end{frame}
+
+\begin{frame}{Sicherheit - Passwörter}
+	\includegraphics[width=10cm]{password_strength.png}
+\end{frame}
+
+\begin{frame}{Sicherheit - Datensparsamkeit}
+    \centering\includegraphics[height=0.7\textheight]{opsec_xkcd.png}
+\end{frame}
+
+\begin{frame}{Anonymität}
+	Ist an sich keine Verschlüsselung, sondern wie man sich anonym im Internet verhält.
+	\\\hspace{1cm}
+	
+	Was ist Anonymität?
+	\begin{itemize}
+		\item Mensch ist anonym, wenn es nicht identifiziert werden kann
+	\end{itemize}
+	
+	Warum ist das wichtig?
+	\begin{itemize}
+		\item Es ist sehr einfach verfolgt zu werden, während man im Internet ist. 
+		\item Antirepression
+	\end{itemize}
+	
+	\textbf{Ich meine es ernst, es ist sehr sehr einfach!}
+\end{frame}
+
+\begin{frame}{Anonymität - \includegraphics[align=c,height=1.5em]{tor.jpg}}
+	Was ist Tor?
+	\begin{itemize}
+		\item Kurz für "The Onion Router"
+		\item Tor-Browser (wie Firefox/Chrome/...) hilft anonym zu sein
+		\item (außerdem gibt es Websiten, die man nur mit diesem Browser erreichen kann)
+		\item Kann man herunterladen auf \url{https://www.torproject.org/} und einfach starten
+	\end{itemize}
+	\hspace{1cm}
+	
+	Wie funktioniert es?
+\end{frame}
+
+\begin{frame}{Anonymität - \includegraphics[align=c,height=1.5em]{tor.jpg}}
+    \centering\includegraphics[height=0.7\textheight]{tor1.png}
+\end{frame}
+
+\begin{frame}{Anonymität - \includegraphics[align=c,height=1.5em]{tor.jpg}}
+    \centering\includegraphics[height=0.7\textheight]{tor2.png}
+\end{frame}
+
+\begin{frame}{Anonymität - \includegraphics[align=c,height=1.5em]{tor.jpg}}
+    \centering\includegraphics[height=0.7\textheight]{tor3.png}
+\end{frame}
+
+\begin{frame}{Anonymität - \includegraphics[align=c,height=1.5em]{tor.jpg}}
+    \centering\includegraphics[height=0.7\textheight]{tor4.png}
+\end{frame}
+
+\begin{frame}{Anonymität - \includegraphics[align=c,height=2.3em]{tails.png}}
+	Was ist das?
+	\begin{itemize}
+		\item TAILS ist ein Betriebssystem, das zum Ziel hat, anonymes Verhalten im Internet sicher und einfach zu machen.
+		\item Tor und andere Werkzeuge vorinstalliert
+                \item Speichert keinerlei Daten!
+	\end{itemize}
+\end{frame}
+
+\section{Workshop!}
+\begin{frame} {Workshop!}
+	Jetzt seid ihr dran!\\
+	Fragen?\\
+	Braucht ihr Hilfe bei der Installation oder beim Benutzen?\\
+	\hspace{1cm}
+	
+	Wir sind für euch da :)
+	\\
+	\hspace{1cm}
+	
+	Danke fürs zuhören!
+\end{frame}
+
+\end{document}
